@@ -108,15 +108,52 @@ a:hover {
 
 .profile-links {
   display: grid;
-  gap: 13px;
+  gap: 14px;
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: 0.84rem;
+  font-size: 0.92rem;
 }
 
 .profile-links li {
   display: block;
+}
+
+.profile-row {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  color: var(--muted);
+}
+
+.profile-row i {
+  width: 28px;
+  color: #45494d;
+  font-size: 1.05rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.profile-row .ai-google-scholar {
+  font-size: 1.12rem;
+}
+
+.profile-row .ai-orcid {
+  color: #a6ce39;
+  font-size: 1.16rem;
+}
+
+.profile-row .fa-linkedin {
+  color: #2f76b7;
+}
+
+.profile-links a:hover {
+  text-decoration: none;
+}
+
+.profile-links a:hover span {
+  text-decoration: underline;
 }
 
 .content {
